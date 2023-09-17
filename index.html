@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Music Festival</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="build/css/app.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container content-header">
+            <h1>Music Festival</h1>
+
+            <nav class="nav">
+                <a href="#lineup">Line up</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#tickets">Tickets</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="video">
+        <div class="overlay">
+            <div class="container content-video">
+                <h2>Rock & EDM Festival</h2>
+                <p class="date-festival"></p>
+            </div>
+        </div>
+        <video autoplay muted loop>
+            <source src="video/concert.mp4" type="video/mp4">
+            <source src="video/concert.ogg" type="video/ogg">
+            <source src="video/concert.webm" type="video/webm">
+        </video>
+    </div>
+
+    <section class="container info-festival">
+        <div class="image">
+            <picture>
+                <source srcset="build/img/singer_image.avif" type="image/avif">
+                <source srcset="build/img/singer_image.webp" type="image/webp">
+                <img loading="lazy" src="build/img/singer_image.jpg" width="200" height="300" alt="Singer image">
+            </picture>
+        </div>
+        <div class="content-festival">
+            <h2>Rock & EDM Festival</h2>
+            <p class="date-festival"></p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos beatae aliquam, numquam illum,
+                dicta consectetur repellendus eos reiciendis illo sapiente culpa quos ab sit delectus! Rem ea quisquam
+                voluptas voluptate.</p>
+        </div>
+    </section>
+
+    <section class="lineup" id="lineup">
+        <h3>Line up</h3>
+
+        <p class="date-festival day-1"></p>
+
+        <div class="concerts-container container">
+            <div class="concert rock bg-yellow">
+                <p class="concert-name">Rock Concert</p>
+
+                <ul class="schedule">
+                    <li>
+                        24:00 | <span>Metallica</span>
+                    </li>
+                    <li>
+                        22:00 | <span>Pearl Jam</span>
+                    </li>
+                    <li>
+                        20:00 | <span>KoRn</span>
+                    </li>
+                    <li>
+                        19:00 | <span>Muse</span>
+                    </li>
+                    <li>
+                        18:00 | <span>Breaking Benjamin</span>
+                    </li>
+                    <li>
+                        17:00 | <span>30 Seconds to Mars</span>
+                    </li>
+                </ul>
+            </div> <!--.concert-->
+            <div class="concert edm bg-green">
+                <p class="concert-name">EDM Concert</p>
+
+                <ul class="schedule">
+                    <li>
+                        24:00 | <span>Deadmau5</span>
+                    </li>
+                    <li>
+                        22:00 | <span>Tïesto</span>
+                    </li>
+                    <li>
+                        20:00 | <span>Hardwell</span>
+                    </li>
+                    <li>
+                        19:00 | <span>Dash Berlin</span>
+                    </li>
+
+                    <li>
+                        18:00 | <span>Fedde Legrand</span>
+                    </li>
+                    <li>
+                        17:00 | <span>Audien</span>
+                    </li>
+                </ul>
+            </div> <!--.concert-->
+        </div> <!--concerts-container-->
+
+        <p class="date-festival day-2"></p>
+
+        <div class="concerts-container container">
+            <div class="concert rock bg-green">
+                <p class="concert-name">Rock Concert</p>
+
+                <ul class="schedule">
+                    <li>
+                        24:00 | <span>Red Hot Chili Peppers</span>
+                    </li>
+                    <li>
+                        22:00 | <span>The Killers</span>
+                    </li>
+                    <li>
+                        20:00 | <span>Deftones</span>
+                    </li>
+                    <li>
+                        19:00 | <span>Limp Bizkit</span>
+                    </li>
+
+                    <li>
+                        18:00 | <span>Papa Roach</span>
+                    </li>
+                    <li>
+                        17:00 | <span>Lamb of God</span>
+                    </li>
+
+                </ul>
+            </div> <!--.concert-->
+            <div class="concert edm bg-yellow">
+                <p class="concert-name">EDM Concert</p>
+
+                <ul class="schedule">
+                    <li>
+                        24:00 | <span>Paul Van Dyk</span>
+                    </li>
+                    <li>
+                        22:00 | <span>Armin Van Buuren</span>
+                    </li>
+                    <li>
+                        20:00 | <span>Above & Beyond</span>
+                    </li>
+                    <li>
+                        19:00 | <span>Eric Prdyz</span>
+                    </li>
+
+                    <li>
+                        18:00 | <span>Ferry Corsten</span>
+                    </li>
+                    <li>
+                        17:00 | <span>Vini Vici</span>
+                    </li>
+                </ul>
+            </div> <!--.concert-->
+        </div> <!--concerts-container-->
+    </section>
+
+    <section class="gallery container" id="gallery">
+        <h3>Gallery</h3>
+        <ul class="gallery-images">
+
+        </ul>
+    </section>
+
+    <section class="tickets bg-green" id="tickets">
+        <h3>Tickets</h3>
+        <div class="container container-tickets">
+            <div class="basic ticket">
+                <p class="ticket-name">2 Days</p>
+                <header class="ticket-header">
+                    <p>Benefits</p>
+                </header>
+
+                <div class="ticket-body">
+                    <ul>
+                        <li>Both Concerts</li>
+                        <li>Food and Drinks</li>
+                    </ul>
+                </div>
+
+                <footer class="ticket-footer">
+                    <p>$130</p>
+                </footer>
+            </div>
+
+            <div class="premium ticket">
+                <p class="ticket-name">3 Days</p>
+                <header class="ticket-header">
+                    <p>Benefits</p>
+                </header>
+
+                <div class="ticket-body">
+                    <ul>
+                        <li>Both Concerts</li>
+                        <li>Food and Drinks</li>
+                        <li>Concert Shirt</li>
+                        <li>VIP</li>
+                    </ul>
+                </div>
+
+                <footer class="ticket-footer">
+                    <p>$200</p>
+                </footer>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+    </footer>
+
+
+    <script src="build/js/index.js" defer></script>
+</body>
+
+</html>
