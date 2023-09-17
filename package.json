@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "sass": "sass --watch src/sass:build/css",
-    "dev": "gulp dev"
+    "dev": "npx gulp dev",
+    "build": "gulp build"
   },
   "author": "Alejo",
   "license": "ISC",

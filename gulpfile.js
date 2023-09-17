@@ -74,7 +74,7 @@ function javaScript(cb) {
         .pipe(sourcemaps.write("."))
         .pipe(dest("build/js"));
     cb();
-} 
+}
 
 
 
@@ -83,3 +83,5 @@ exports.imagesmin = imagesmin;
 exports.convertToAvif = convertToAvif;
 exports.js = javaScript;
 exports.dev = parallel(imagesmin, convertToAvif, convertToWebp, javaScript, dev);
+exports.build = parallel(imagesmin, convertToAvif, convertToWebp, javaScript, dev);
+exports.default = parallel(imagesmin, convertToAvif, convertToWebp, javaScript, dev);
